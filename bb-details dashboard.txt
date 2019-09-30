@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blood bank Details | BLORES</title>
+    <link rel="icon" href="images/brand-logo.png" type="image" sizes="16x16">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="brand-logo" href="index.html"><img src="images/brand-logo.png" alt=""></a>
+                <div class="heading">
+                    <h1>BLORES</h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">Home</a>
+                    <a class="nav-item nav-link" href="#">About Us</a>
+                    <a class="nav-item nav-link" href="#">Contact</a>
+                    <a class="nav-item nav-link" href="#">Settings</a>
+                    <a class="nav-item nav-link" href="#">Logout</a>
+                  </div>
+                </div>
+              </nav>
+
+              <div id="googleMap" style="width:100%;height:400px;"></div>
+
+            <script>
+                    function myMap() {
+                    var mapProp= {
+                      center:new google.maps.LatLng(51.508742,-0.120850),
+                      zoom:5,
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                    }
+            </script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBwbCltPlZjkTO8E-Kkn32sMQB5ADLgK4&callback=myMap"></script>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-lg-4"></div>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="spacer"></div>
+                            <div class="bbDetailsButtons">
+                                <button class="loginButton">Reserve Blood</button>
+                                    <button class="loginButton">Back</button>
+                                </div>
+                    </div>
+                    
+                </div>
+            </div>
+           
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
+
